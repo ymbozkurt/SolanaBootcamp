@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solana Test Management</title>
+</head>
+<body>
+    <h1>Solana Test Management</h1>
+    <div style="border: 1px solid black; padding: 20px;">
+        <h4>New Wallet</h4>
+        <form action="http://172.25.140.104:3000/newwallet" method="POST">
+            <label>New Wallet:</label>
+            <input type="submit" value="New">
+        </form>
+    </div>
+
+    <div style="border: 1px solid black; padding: 20px;">
+        <h4>Airdrop Tokens</h4>
+        <form action="http://172.25.140.104:3000/airdrop" method="POST">
+            <label>Enter Value To Airdrop:</label>
+            <input type="text" name="key"><br><br>
+            <input type="submit" value="Airdrop">
+        </form>
+    </div>
+
+    <div style="border: 1px solid black; padding: 20px;">
+        <h4>Show Balance</h4>
+        <form action="http://172.25.140.104:3000/balance" method="POST">
+            <label>Show Balance</label>
+            <input type="submit" value="Show Balance">
+        </form>        
+    </div>
+
+    <div style="border: 1px solid black; padding: 20px;">
+        <h4>Add Data</h4>
+        <form action="http://172.25.140.104:3000/transfer" method="POST">
+            <label>Send To:</label>
+            <input type="text" name="key"><br><br>
+            <label>Send Token Value:</label>
+            <input type="text" name="value"><br><br>
+            <input type="submit" value="Transfer">
+        </form>
+    </div>    
+</body>
+</html>
